@@ -1,0 +1,20 @@
+startup --host_jvm_args=-Xmx8g
+
+# Moving Bazel build root folder to the location excluded from Sophos scans
+startup --output_user_root=D:/Builds
+
+common --color=yes
+common --curses=yes
+common --experimental_ui_deduplicate
+
+build --incompatible_enable_profile_by_default=false
+
+# this may be used to get rid of "Command line warning D9025 : overriding '/MD' with '/MDd'" which happens for fastbuild compilation mode
+#build --compilation_mode dbg
+
+#build --experimental_execution_log_file=C:\1\basel_execution_log.txt
+build --explain=C:/1/bazel_explain.txt
+build --verbose_explanations
+
+# common --announce_rc
+# build -s 
