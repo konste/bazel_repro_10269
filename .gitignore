@@ -1,0 +1,50 @@
+*~
+# eclipse project files
+*/.project
+*/.cproject
+*/.settings/
+
+# TextMate project files
+.tm_properties
+
+# macOS files
+**/.DS_Store
+
+# idea project files
+/.idea/*
+.reviewboardrc
+
+# vim swap files
+*.sw?
+
+# Python bytecode files
+*.pyc
+
+# Visual Studio Code files
+/.vscode/*
+
+# Visual Studio files
+/.vs/*
+
+# Ignore build folders
+/debug
+/release
+/Debug
+/Release
+/MinSizeRel
+/RelWithDebInfo
+/build/
+/cmake-build-default
+/cmake-build-debug
+/cmake-build-release
+/cmake-build-relwithdebinfo
+/cmake-build-minsizerel
+/.build
+/logs/
+
+.p4config
+
+# Bazel
+bazel-*
+.ijwb
+.clwb
